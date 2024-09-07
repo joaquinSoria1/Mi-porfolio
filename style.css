@@ -1,0 +1,153 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    height: 100%;
+}
+
+.container {
+    display: flex;
+    min-height: 100vh;
+}
+
+.sidebar {
+    width: 200px;
+    background-color: #1a1a2e;
+    color: white;
+    padding: 20px;
+    position: fixed;
+    height: 100vh;
+    overflow-y: auto;
+}
+
+.main-content {
+    flex-grow: 1;
+    background-color: #1e1e1e;
+    color: white;
+    padding: 40px;
+    margin-left: 200px; /* Ancho de la barra lateral */
+    overflow-y: auto;
+}
+#home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+.home-content {
+    max-width: 600px;
+}
+
+#home h1 {
+    font-size: 4em;
+    margin-bottom: 0.2em;
+}
+
+#home .title {
+    font-size: 1.5em;
+    margin-bottom: 1em;
+}
+
+.social-icons {
+    font-size: 2em;
+}
+
+.social-icons a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.nav-item {
+    display: block;
+    margin: 10px 0;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.social-icons a {
+    color: white;
+    margin-right: 10px;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+section {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+#skills {
+    background-color: #1e1e1e;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#skills h2 {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.Conocimientos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-items: center;
+}
+
+.skill-item {
+    background: linear-gradient(145deg, #2a2a2a, #1a1a1a);
+    box-shadow: 5px 5px 10px #141414, -5px -5px 10px #262626;
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 100px;
+    transition: transform 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skill-item i {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.skill-item:hover {
+    transform: scale(1.1);
+}
+
+.project {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #1a1a2e;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+}
